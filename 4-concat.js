@@ -1,10 +1,6 @@
-// Get the third element of the process.argv array, which is the first argument.
-const firstArgument = process.argv[2];
+#!/usr/bin/node
 
-// Check if the first argument is undefined (meaning no argument was passed)
-if (firstArgument === undefined) {
-  console.log("No argument");
-} else {
-  // Otherwise, print the first argument.
-  console.log(firstArgument);
-}
+const arg1 = process.argv[2];
+const arg2 = process.argv[3];
+
+console.log(`${arg1} is ${arg2}`);
